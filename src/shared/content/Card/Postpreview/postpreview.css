@@ -1,0 +1,43 @@
+
+
+.post__personImg img {
+    width: 100%;
+    object-position: center;
+}
+
+
+@media (min-width: 320px) {
+
+    .post__preview {
+        height: 178px;
+    }
+    .post__previewImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+}
+@media (min-width: 1024px) {
+    .post__preview {
+        order: 1;
+    }
+    .post__preview {
+        height: 107px;
+        width: 100%;
+        max-width: 190px;
+    }
+}
+@media (min-width: 1200px) {
+
+
+}
+@media (min-width: 1540px) {
+
+    .post__preview {
+        height: 107px;
+        width: 190px;
+    }
+
+}

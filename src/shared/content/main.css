@@ -1,0 +1,13 @@
+@media (min-width: 1024px) {
+    .content {
+        background-color: #fff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media (min-width: 1540px) {
+    .content {
+        padding-top: 47px;
+        padding-bottom: 47px;
+    }
+}

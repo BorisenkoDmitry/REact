@@ -1,0 +1,52 @@
+
+
+@media (min-width: 320px) {
+
+    .post__menuBtn {
+        width: 31px;
+        height: 31px;
+        transform: rotate(90deg);
+        position: absolute;
+        right: 20px;
+        top: 14px;
+    }
+
+}
+@media (min-width: 1024px) {
+
+    .post__menuBtn {
+        position: static;
+        transform: none;
+    }
+    .post__menu {
+        order: 3;
+        display: flex;
+        align-items: center;
+    }
+
+}
+@media (min-width: 1200px) {
+
+    .post__menuBtn {
+        position: relative;
+        z-index: 1;
+ 
+    }
+
+    .post__menuBtn {
+        top: 0;
+        right: 0;
+    }
+
+    .post__menuBtn {
+        border-radius: 100%;
+        transition: background-color .3s ease-in-out;
+    }
+    .post__menuBtn:hover {
+        background-color: rgba(51, 51, 51, 0.1);
+    }
+
+}
+@media (min-width: 1540px) {
+
+}

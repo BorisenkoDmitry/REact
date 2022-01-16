@@ -1,0 +1,126 @@
+
+.post__top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.post__Name {
+    color: var(--color-promo);
+    margin-right: 6px;
+}
+.post__title {
+    color: var(--color-black);
+    font-weight: normal;
+    line-height: 18px;
+}
+.post__link {
+
+}
+.post__date {
+    color: var(--color-gray);
+}
+
+@media (min-width: 320px) {
+
+    .post__top {
+        padding: 20px 55px 0 20px;
+    }
+
+    .post__Name, .post__date {
+        font-size: 10px;
+    }
+    .post__title {
+        font-size: 16px;
+        margin-bottom: 13px;
+        width: 100%;
+    }
+    .post__personImg img {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+    }
+    .post__top__user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+    .post__personImg {
+        margin-right: 7px;
+    }
+    .post__publication {
+        display: none;
+    }
+
+}
+@media (min-width: 1024px) {
+    .post__top__user {
+        order: 2;
+    }
+    .post__top {
+        order: 2;
+        align-content: center;
+        margin-right: auto;
+    }
+
+    .post__publication {
+        display: inline-block;
+    }
+    .post__Name, .post__date {
+        font-size: 14px;
+    }
+    .post__title {
+        font-size: 20px;
+        order: 1;
+        margin-bottom: 8px;
+    }
+    .post__date {
+        order: 2;
+        margin-right: 6px;
+    }
+    .post__Name {
+        order: 4;
+    }
+    .post__personImg {
+        order: 3;
+    }
+
+
+}
+@media (min-width: 1200px) {
+    .post__link:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        transition: border-color .3s ease-in-out;
+    }
+    .post__link:hover:before {
+        border-color: var(--color-gray)
+    }
+    .post__link:hover {
+        color: var(--color-promo);
+    }
+    .post__link {
+        transition: color .3s ease-in-out;
+    }
+
+    .post__Name {
+        position: relative;
+        z-index: 1;
+    }
+    .post__Name:hover {
+        text-decoration: underline;
+    }
+
+}
+@media (min-width: 1540px) {
+
+    .post__top {
+        padding-top: 0;
+    }
+}

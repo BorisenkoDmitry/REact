@@ -1,0 +1,31 @@
+
+@media (min-width: 320px) {
+    .post {
+        position: relative;
+        background-color: #fff;
+    }
+    .post:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    
+}
+@media (min-width: 1024px) {
+    .post {
+        display: flex;
+        padding: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .post {
+        position: relative;
+    }
+}
+@media (min-width: 1540px) {
+    .post {
+        padding: 21px 48px 21px 72px;
+    }
+    .post:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+}

@@ -1,0 +1,54 @@
+@media (min-width: 320px) {
+
+    .karmaCounters {}
+
+    .karmaUp {
+        margin-right: 4px;
+    }
+
+    .karmaDown {
+        transform: rotate(180deg);
+    }
+
+    .karmaVal {
+        margin-right: 4px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+
+    .karmaCounters {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .karmaUp {
+        margin-right: 0;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .karmaUp, .karmaDown {
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .karmaUp path, .karmaDown path {
+        transition: fill .3s ease-in-out;
+    }
+
+    .karmaUp:hover path,
+    .karmaDown:hover path {
+        fill: var(--color-green);
+    }
+
+}
+
+@media (min-width: 1540px) {}

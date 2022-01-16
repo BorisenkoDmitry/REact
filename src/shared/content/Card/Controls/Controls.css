@@ -1,0 +1,42 @@
+
+@media (min-width: 320px) {
+        /** Counters **/
+    .controls {
+        padding: 10px 20px;
+        color: var(--color-grayLighter);
+
+        display: flex;
+        justify-content: space-between;
+    }
+    .commentsBtn {
+        display: inline-flex;
+        align-items: center;
+    }
+    .commentsBtn svg {
+        margin-right: 6px;
+    }
+    .commentsBtnText {
+
+    }
+
+}
+@media (min-width: 1024px) {
+
+    .actions {
+        display: none;
+    }
+    .commentsBtn {
+        display: none;
+    }
+
+    .controls {
+        order: 4;
+    }
+}
+@media (min-width: 1200px) {
+
+
+}
+@media (min-width: 1540px) {
+
+}
